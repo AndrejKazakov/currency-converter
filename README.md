@@ -1,40 +1,57 @@
 currency-converter
 =================
 
+## Описание
+converter - это веб-приложение, разработанное на Django, которое позволяет пользователям конвертировать валюты с помощью пользовательского ввода.
+Приложение позволяет выбирать валюту, которую нужно конвертировать, а также валюту, в которую нужно конвертировать, а затем выводит результат на экран.
 
-### Как запустить проект:
-
-
-* Клонировать репозиторий:
-
-```
-git clone git@github.com:AndrejKazakov/currency-converter.git
-```
-
-* В папке с репозиторием создать виртуальное окружение и активировать его:
+## Установка
+Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-python3 -m venv venv
+git clone https://github.com/AndrejKazakov/currency-converter.git
 ```
 
 ```
-source venv/bin/activate
+cd currency-converter
 ```
 
-* Установить зависимости из файла requirements.txt:
+Cоздать и активировать виртуальное окружение:
+
+```
+python -m venv env
+```
+
+* Если у вас Linux/macOS
+
+    ```
+    source env/bin/activate
+    ```
+
+* Если у вас windows
+
+    ```
+    source env/scripts/activate
+    ```
+
+```
+python -m pip install --upgrade pip
+```
+
+Установить зависимости из файла requirements.txt:
 
 ```
 pip install -r requirements.txt
 ```
 
-* Выполнить миграции:
+Выполнить миграции:
 
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 
-* Запустить проект:
+Запустить проект:
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
