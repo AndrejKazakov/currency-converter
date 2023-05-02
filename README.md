@@ -47,17 +47,17 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
-python manage.py migrate
+python currency_converter/manage.py migrate
 ```
 
 Загрузить данные:
 
 ```
-python manage.py add_data currency
+python currency_converter/manage.py add_data currency
 ```
 
 Запустить проект:
 
 ```
-python manage.py runserver
+python currency_converter/manage.py runserver
 ```
