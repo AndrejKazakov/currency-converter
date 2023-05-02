@@ -3,6 +3,7 @@ from .forms import ConverterForm
 
 
 def convert(request):
+    """Конвертирует валюту на основе введенных пользователем данных."""
     if request.method == 'POST':
         form = ConverterForm(request.POST)
         if form.is_valid():
