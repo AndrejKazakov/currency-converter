@@ -8,7 +8,7 @@ currency-converter
 * Клонировать репозиторий:
 
 ```
-git@github.com:AndrejKazakov/currency-converter.git
+git clone git@github.com:AndrejKazakov/currency-converter.git
 ```
 
 * В папке с репозиторием создать виртуальное окружение и активировать его:
