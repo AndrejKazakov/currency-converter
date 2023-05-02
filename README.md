@@ -50,6 +50,12 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
+Загрузить данные:
+
+```
+python manage.py add_data currency
+```
+
 Запустить проект:
 
 ```
